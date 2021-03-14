@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="login.css" type="text/css">
+    </head>
+    <header>
+        
+    </header>
+    <body>
+        <h2 id="Register">Create New Account</h2><br> 
+        
+        <form id="registrationForm" method="POST" action="exercise6.php" >     
+            <div id = registrationDiv>       
+            <label class="loginLabel" for="firstName">First Name</label><br>
+            <input type="text" class="textfield" id="firstName" name="firstName" required><br>   
+            <label class="loginLabel" for="lastName">Last Name</label><br>        
+            <input type="text" class="textfield" id="lastName" name="lastName" required><br>  
+            <label class="loginLabel" for="newEmail">Email</label><br>        
+            <input type="email" class="textfield" id="newEmail" name="newEmail" required><br>
+            <label class="loginLabel" for="newUsername">Username</label><br>        
+            <input type="text" class="textfield" id="newUsername" name="newUsername" required><br>
+            <label class="loginLabel" for="newPassword">Password</label><br>
+            <input type="password" class="textfield" id="newPassword" name="newPassword" required><br>
+            <label class="loginLabel" for="confirmPassword">Confirm Password</label><br>
+            <input type="password" class="textfield" id="confirmPassword" name="confirmPassword" required><br>
+            <input type="submit" class="submit" value="Register" onclick="passwordSame()"><br>
+            <a href=login.html class="loginLinks">Log In to Existing Account</a>
+        </div> 
+        </form>
+       
+    </body>
+
+</html>
